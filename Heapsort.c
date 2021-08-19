@@ -1,3 +1,19 @@
+/*Implemente o algoritmo de ordenação HeapSort, conforme
+especificado nos slides e video-aula (de acordo com o livro T. Cormen).
+Escreva um procedimento separado para as seguintes operações: a) maxheapfy(...), b) build-max-heap(…), c) heap-extract-max(…) e d)
+heapSort(…).
+Entrada
+A entrada consiste de duas linhas, sendo a primeira contendo um número
+inteiro N (1 ≤ N ≤ 10.000) que especifica a quantidade de valores do arranjo original a
+serem ordenados.
+A segunda linha contém uma sequência de números inteiros separados por
+espaços, onde cada número inteiro Ai pode estar na faixa: 0 ≤ Ai ≤ 10.000,
+correspondendo ao arranjo original a ser ordenado.
+Saída
+A saída consiste de duas linhas, sendo a primeira o vetor rearranjado após a
+chamada a rotina build-max-heap(…). A segunda linha corresponde ao vetor final
+devidamente ordenado.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
