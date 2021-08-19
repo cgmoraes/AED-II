@@ -1,3 +1,24 @@
+/*Aten¸c˜ao:
+1. E/S: tanto a entrada quanto a sa´ıda de dados devem ser “secas”, ou seja, n˜ao devem
+apresentar frases explicativas.
+2. Identificadores de vari´aveis: escolha nomes apropriados.
+3. Documenta¸c˜ao: inclua cabe¸calho, coment´arios e indenta¸c˜ao no programa.
+• Descri¸c˜ao:
+Implemente as opera¸c˜oes b´asicas do algoritmo de pesquisa baseado em transforma¸c˜ao de chave
+(hashing), conforme as especifica¸c˜oes abaixo. Utilize o m´etodo da divis˜ao como fun¸c˜ao de
+transforma¸c˜ao e a estrat´egia de encadeamento para tratar colis˜oes. Escreva um procedimento
+separado para as seguintes opera¸c˜oes: (1) pesquisa, (2) inser¸c˜ao e (3) remo¸c˜ao. Se necess´ario,
+na opera¸c˜ao de inser¸c˜ao, coloque o novo item ap´os todos os itens demais, ou seja, no final.
+• Entrada:
+A entrada consiste de v´arios n´umeros inteiros separados por espa¸cos. O primeiro n´umero
+indica o tamanho da tabela de hash a ser utilizada. Todos os demais n´umeros exceto o ´ultimo
+ser˜ao inseridos na tabela. O ´ultimo n´umero ser´a utilizado como chave a ser pesquisada na
+tabela. No caso de uma pesquisa sem sucesso, esse n´umero tamb´em ser´a inserido na tabela,
+caso contr´ario, ele dever´a ser removido.
+• Sa´ıda:
+Imprima a tabela de hash, cada entrada da tabela em uma linha, separando os elementos de
+uma mesma entrada com um espa¸co.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
