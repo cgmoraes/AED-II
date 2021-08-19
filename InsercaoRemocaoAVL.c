@@ -1,3 +1,21 @@
+/*Aten¸c˜ao:
+1. E/S: tanto a entrada quanto a sa´ıda de dados devem ser “secas”, ou seja, n˜ao devem
+apresentar frases explicativas.
+2. Identificadores de vari´aveis: escolha nomes apropriados.
+3. Documenta¸c˜ao: inclua cabe¸calho, coment´arios e indenta¸c˜ao no programa.
+• Descri¸c˜ao:
+Implemente as opera¸c˜oes b´asicas de um algoritmo de pesquisa em ´arvores AVL, conforme as especifica¸c˜oes abaixo. Escreva um procedimento (fun¸c˜ao) separado para as seguintes opera¸c˜oes:
+(1) inicializa¸c˜ao, (2) pesquisa, (3) inser¸c˜ao e (4) remo¸c˜ao. Se necess´ario, na opera¸c˜ao de
+remo¸c˜ao, dˆe a preferˆencia para a promo¸c˜ao da menor chave da sub´arvore `a direita, ou seja, o
+sucessor. calcular a altura da ´arvore, caso seja necess´ario.
+• Entrada:
+A entrada consiste de v´arios n´umeros inteiros separados por espa¸cos. Todos os n´umeros
+exceto o ´ultimo ser˜ao inseridos na ´arvore AVL. O ´ultimo n´umero ser´a utilizado como chave
+a ser pesquisada na ´arvore. No caso de uma pesquisa sem sucesso, esse n´umero tamb´em ser´a
+inserido na ´arvore, caso contr´ario, ele dever´a ser removido da ´arvore.
+• Sa´ıda:
+Imprima a ´arvore AVL representada por parˆenteses aninhados (veja exemplos na tarefa anterior - Tarefa 07).*/
+
 #include "stdio.h"
 #include "stdlib.h"
 
