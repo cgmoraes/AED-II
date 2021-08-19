@@ -1,3 +1,30 @@
+/*Aten¸c˜ao:
+1. E/S: tanto a entrada quanto a sa´ıda de dados devem ser “secas”, ou seja, n˜ao devem
+apresentar frases explicativas.
+2. Identificadores de vari´aveis: escolha nomes apropriados.
+3. Documenta¸c˜ao: inclua cabe¸calho, coment´arios e indenta¸c˜ao no programa.
+• Descri¸c˜ao:
+Implemente as opera¸c˜oes b´asicas do algoritmo de balanceamento em ´arvores AVL. Escreva
+um procedimento separado para as seguintes opera¸c˜oes: (1) Altura: retorna a altura de um
+dado n´o; (2) FB: retorna o fator de balanceamento de um dado n´o; (3) ArvoreAVL: verifica
+se uma ´arvore ´e ou n˜ao AVL; (4) LL, RR, LR, RL: executa uma rota¸c˜ao em um dado n´o; (5)
+BalancaNo: verifica um dado n´o e efetua o seu balanceamento, caso necess´ario. Deve-se
+ainda efetuar uma ´unica rota¸c˜ao no n´o raiz, de acordo com as regras de balanceamento de
+uma ´arvore AVL.
+• Entrada:
+A entrada consiste de uma ´arvore bin´aria de busca (ABB) representada por parˆenteses aninhados. Um exemplo pode ser encontrado abaixo.
+• Sa´ıda:
+Imprima, na primeira linha, a altura da ´arvore bin´aria de busca (ABB) de entrada e, em
+seguida (segunda linha), a pr´opria ´arvore usando a representa¸c˜ao por parˆenteses aninhados.
+Posteriormente, deve-se computar uma nova ABB onde se efetuou uma rota¸c˜ao LL, RR, LR
+ou RL aplicada apenas no n´o raiz. A rota¸c˜ao dever´a ser efetuada de acordo com as regras
+de balanceamento de uma ´arvore AVL.
+Ap´os computada a nova ´arvore, deve-se imprimir o tipo de rota¸c˜ao efetuada (RR, LL, RL ou
+LR, usando sempre letras ma´ısculas) no n´o raiz na terceira linha. Depois, na quarta linha,
+imprima a altura desta ABB transformada. Finalmente, na quinta e ´ultima linha, imprima
+pr´opria ABB de sa´ıda usando a representa¸c˜ao por parˆenteses aninhados.
+Obs: Todas as entradas exigem algum tipo de rota¸c˜ao no n´o raiz.*/
+
 #include "stdio.h"
 #include "stdlib.h"
 
