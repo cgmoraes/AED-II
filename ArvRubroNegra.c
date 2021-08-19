@@ -1,3 +1,35 @@
+/*Aten¸c˜ao:
+1. E/S: tanto a entrada quanto a sa´ıda de dados devem ser “secas”, ou seja, n˜ao devem
+apresentar frases explicativas.
+2. Identificadores de vari´aveis: escolha nomes apropriados.
+3. Documenta¸c˜ao: inclua cabe¸calho, coment´arios e indenta¸c˜ao no programa.
+• Descri¸c˜ao:
+Implemente as opera¸c˜oes b´asicas dos procedimentos para inser¸c˜ao e remo¸c˜ao de dados em
+´arvores rubro-negras. Os n´os a serem inseridos devem armazenar n´umeros inteiros como
+chaves.
+• Entrada:
+A entrada consiste de um conjunto de 3 linhas, onde:
+a) a primeira linha consiste em um valor inteiro que determina a quantidade (N) de diferentes
+valores a serem inseridos na ´arvore Rubro-Negra.
+b) a segunda linha ´e composta pelos N n´umeros inteiros (chaves) que dever˜ao representar
+cada n´o da ´arvore a ser criada.
+c) N´umero inteiro representando uma chave do n´o a ser removido.
+• Sa´ıda:
+A sa´ıda deve ser exibida em 4 linhas, onde:
+a) a primeira linha dever´a exibir a altura negra da ´arvore criada com os n´os inseridos (sem a
+remo¸c˜ao), caso a ´arvore obtida seja uma ´arvore rubro-negra.
+b) a segunda linha ´e a pr´opria ´arvora rubro-negra usando a representa¸c˜ao por parˆenteses
+aninhados (c´odigo para exibi¸c˜ao fornecido), sem contar com a remo¸c˜ao, ou seja, apenas com
+os n´os inseridos.
+c) a terceira linha dever´a exibir a altura negra da ´arvore criada levando em considera¸c˜ao o
+n´o a ser removido.
+d) a quarta linha dever´a exibir a nova ´arvora rubro-negr, levando em considera¸c˜ao a remo¸c˜ao
+do n´o, usando a representa¸c˜ao por parˆenteses aninhados.
+Obs.: Como poder´a ser verificado nos exemplos, na exibi¸c˜ao da ´arvore, antes do valor da
+chave referente ao n´o, deve-se exibir a letra (em ma´ısculas) referente a cor do n´o. Assim, para
+os n´os Rubros (ou Vermelhos) deve-se exibir a letra “R”, e para os n´os de cor Negra deve-se
+exibir a letra “N”.*/
+
 #include "stdio.h"
 #include "stdlib.h"
 
@@ -18,34 +50,6 @@ typedef struct SNo {
 } TNo;
 
 TArvBin raiz = NULL;
-
-int main()
-{
-	TArvBin novoNo(int item);
-	void remover(int item);
-	void imprime(TArvBin x);
-	void inserir(int item);
-	void verifica(int valor);
-	int ehNegro(TArvBin No);
-	int alturaN(TArvBin x);
-	int busca(TArvBin x, int valor);
-	int i, n, valor;
-	scanf("%d", &n);
-	for (i = 0; i < n; i++) {
-		scanf("%d", &valor);
-		inserir(valor);
-	}
-
-	scanf("%d", &valor);
-	printf("%d\n", alturaN(raiz));
-	imprime(raiz);
-
-	verifica(valor);
-
-	printf("\n%d\n", alturaN(raiz));
-	imprime(raiz);
-	return 0;
-}
 
 void remover(int item)
 {
@@ -403,3 +407,25 @@ void verifica(int valor)
 	} else
 		remover(valor);
 }
+
+int main()
+{
+	TArvBin novoNo(int item);
+	int i, n, valor;
+	scanf("%d", &n);
+	for (i = 0; i < n; i++) {
+		scanf("%d", &valor);
+		inserir(valor);
+	}
+
+	scanf("%d", &valor);
+	printf("%d\n", alturaN(raiz));
+	imprime(raiz);
+
+	verifica(valor);
+
+	printf("\n%d\n", alturaN(raiz));
+	imprime(raiz);
+	return 0;
+}
+
